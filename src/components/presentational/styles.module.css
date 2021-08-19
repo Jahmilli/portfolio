@@ -1,0 +1,306 @@
+button {
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0rem 0;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbarContainer {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fdc435;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 1;
+}
+.navbarContainer > p {
+  display: flex;
+}
+.navbarContainer > ul {
+  list-style: none;
+}
+.navbarContainer li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.navbarContainer li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.navbarContainer a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Landing */
+.landingContainer {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.seeMoreContainer {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+}
+.seeMoreContainer > button {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.seeMoreContainer > button > img {
+  height: 2rem;
+  width: 2rem;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+.titleContainer {
+  margin: 5rem 0 0 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30vw;
+  border-radius: 1.25rem;
+  display: inline-block;
+  color: black;
+}
+
+.titleContainer > h1 {
+  font-size: 3rem;
+}
+
+.primaryBtn {
+  background-color: #fdc435;
+}
+.secondaryBtn {
+  background: none;
+  border: 2px solid black;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0rem 0;
+  text-decoration: none;
+}
+.secondaryBtn:hover {
+  text-decoration: underline;
+}
+
+/* About */
+.twoSideContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: white;
+}
+
+.twoSideContainerTextLockup {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.twoSideContainerImageLockup {
+  max-width: 100%;
+  max-height: 75vh;
+  text-align: right;
+}
+.twoSideContainerImageLockup > img {
+  max-width: 100%;
+  height: 100%;
+  /* transform: scaleX(-1); */
+}
+
+/* Skills */
+.skillsContainer {
+}
+
+.midPageTitleLockup {
+  background-color: #fdc435;
+  border-radius: 0.25rem;
+  padding: 1rem 0 7rem 0;
+}
+
+.technicalSkillsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: -5rem 5rem 0 5rem;
+  padding: 2rem 5rem 0 5rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.techToolsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.techToolsDescription {
+  border-left: 2px solid black;
+  /* background-color: tomato; */
+}
+.techToolsDescriptionTitleLockup {
+  display: flex;
+  justify-content: center;
+}
+.techToolsDescriptionTitleLockup > h3 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.techToolsDescriptionTitleLockup > img {
+  height: 4rem;
+  width: 4rem;
+}
+.techToolsDescription ul {
+  list-style: none;
+  text-align: left;
+}
+
+/* Soft Skills */
+.softSkillsGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.softSkillsGrid > div {
+  background-color: white;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.softSkillsGrid ul {
+  text-align: left;
+}
+
+/* SkillsCard */
+.skillsCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skillsCardContainer button {
+  background: none;
+}
+.skillsCardContainer img {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* Achievements */
+.achievementsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.achievementsList > div {
+  margin: 2rem;
+}
+
+/* Card */
+.cardContainer {
+  display: inline-block;
+  background-color: white;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cardContainer > p:first-child {
+  font-weight: bold;
+}
+
+.cardContainer > a {
+  display: inline-block;
+  color: black;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.cardContainer > a:hover {
+  text-decoration: underline;
+}
+
+.otherContainer {
+}
+
+/* Footer */
+.footerContainer {
+  /* height: 25vh; */
+  /* background-color: tomato; */
+  position: relative;
+  text-align: center;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerContainer > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2rem;
+  text-align: center;
+}
+
+.footerContainer > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .techToolsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .achievementsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .techToolsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .achievementsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .softSkillsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
