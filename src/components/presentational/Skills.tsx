@@ -19,6 +19,7 @@ export const Skills = () => {
         <div className={styles.techToolsContainer}>
           {technicalSkillsList.map((skill, index) => (
             <SkillsCard
+              key={index}
               imgPath={skill.icon}
               title={skill.title}
               onClick={() => setCurrentSelectedSkillIndex(index)}
@@ -32,8 +33,8 @@ export const Skills = () => {
           </div>
           <ul>
             {technicalSkillsList[currentSelectedSkillIndex].work.map(
-              (item: string) => (
-                <li>{item}</li>
+              (item: string, index: number) => (
+                <li key={index}>{item}</li>
               )
             )}
           </ul>
