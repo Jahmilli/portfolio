@@ -9,17 +9,34 @@ type TwoSideContainerProps = {
 
 export const TwoSideContainer = (props: TwoSideContainerProps) => {
   const borderRadius = props.borderRadius ?? "0";
+
   return (
-    <div className={styles.twoSideContainer} style={{ borderRadius }}>
+    <div
+      className={
+        props.reversed
+          ? styles.twoSideContainerReversed
+          : styles.twoSideContainer
+      }
+      style={{ borderRadius }}
+    >
       <div className={styles.twoSideContainerTextLockup}>
         {props.leftSideContent}
       </div>
-      <div className={styles.twoSideContainerImageLockup}>
+      <div
+        className={
+          props.reversed
+            ? styles.twoSideContainerImageLockupReversed
+            : styles.twoSideContainerImageLockup
+        }
+      >
         <img
           src={props.imageUrl}
+          draggable={false}
           style={{
             borderTopRightRadius: borderRadius,
             borderBottomRightRadius: borderRadius,
+            borderTopLeftRadius: borderRadius,
+            borderBottomLeftRadius: borderRadius,
           }}
         />
       </div>

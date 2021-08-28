@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const AboutLeftSideContent = () => {
   return (
-    <div>
+    <div style={{ marginTop: "4rem" }}>
       <h2>Getting to know me</h2>
       <p>
         I'm a software engineer who started learning about software development

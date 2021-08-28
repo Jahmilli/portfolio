@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 
 export const Navbar = () => {
-
   return (
     <div className={styles.navbarContainer}>
-      <p>Sebastian Southern</p>
+      <Link to="/">
+        <p>Sebastian Southern</p>
+      </Link>
       <ul>
         <li>
-          <Link to="/">
+          <Link to="/about">
             <a>About</a>
           </Link>
         </li>

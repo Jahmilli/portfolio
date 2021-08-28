@@ -114,21 +114,34 @@ button:hover {
   padding: 0.5rem;
   margin: 1rem 1rem 0rem 0;
   text-decoration: none;
+  transition: 0.25s;
 }
 .secondaryBtn:hover {
-  text-decoration: underline;
+  background-color: black;
+  color: white;
 }
 
 /* About */
 .twoSideContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 2fr 1fr;
   background-color: white;
+}
+
+.twoSideContainerReversed {
+  composes: twoSideContainer;
+  direction: rtl;
+}
+
+.twoSideContainerReversed div {
+  direction: ltr;
 }
 
 .twoSideContainerTextLockup {
   text-align: left;
   padding-left: 3rem;
+  height: 75vh;
+  overflow-y: scroll;
 }
 
 .twoSideContainerImageLockup {
@@ -136,10 +149,15 @@ button:hover {
   max-height: 75vh;
   text-align: right;
 }
+
 .twoSideContainerImageLockup > img {
   max-width: 100%;
   height: 100%;
-  /* transform: scaleX(-1); */
+}
+
+.twoSideContainerImageLockupReversed {
+  composes: twoSideContainerImageLockup;
+  text-align: left;
 }
 
 /* Skills */
@@ -156,7 +174,7 @@ button:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: -5rem 5rem 0 5rem;
-  padding: 2rem 5rem 0 5rem;
+  padding: 2rem 5rem 0 0rem;
   border-radius: 1rem;
   background-color: white;
 }
@@ -168,7 +186,9 @@ button:hover {
 
 .techToolsDescription {
   border-left: 2px solid black;
-  /* background-color: tomato; */
+  overflow-y: scroll;
+  text-align: left;
+  padding-left: 2rem;
 }
 .techToolsDescriptionTitleLockup {
   display: flex;
@@ -184,8 +204,7 @@ button:hover {
   width: 4rem;
 }
 .techToolsDescription ul {
-  list-style: none;
-  text-align: left;
+  list-style: circle;
 }
 
 /* Soft Skills */
@@ -261,8 +280,6 @@ button:hover {
 
 /* Footer */
 .footerContainer {
-  /* height: 25vh; */
-  /* background-color: tomato; */
   position: relative;
   text-align: center;
   height: 25vh;
@@ -283,6 +300,11 @@ button:hover {
 }
 
 @media screen and (max-width: 1200px) {
+  .twoSideContainer {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+  }
   .techToolsContainer {
     grid-template-columns: repeat(3, 1fr);
   }

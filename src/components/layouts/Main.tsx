@@ -1,4 +1,5 @@
 import React from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { About } from "../pages/About";
 import { Articles } from "../pages/Articles";
 import { Contact } from "../pages/Contact";
@@ -6,31 +7,33 @@ import { Projects } from "../pages/Projects";
 import { Footer } from "../presentational/Footer";
 import { Landing } from "../presentational/Landing";
 import { Navbar } from "../presentational/Navbar";
-import { Switch, Route } from "react-router-dom";
-import { HashRouter } from "react-router-dom";
-
 
 export const Main = () => {
   return (
     <div>
       <HashRouter>
         <Navbar />
-        <Landing />
         <Switch>
           <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route exact path="/about">
             <About />
+            <Footer />
           </Route>
           <Route exact path="/projects">
             <Projects />
+            <Footer />
           </Route>
           <Route exact path="/articles">
             <Articles />
+            <Footer />
           </Route>
           <Route exact path="/contact">
             <Contact />
+            <Footer />
           </Route>
         </Switch>
-        <Footer />
       </HashRouter>
     </div>
   );

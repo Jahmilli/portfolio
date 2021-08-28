@@ -29,6 +29,7 @@ export const Projects = () => {
             leftSideContent={<CallTranslateContent />}
             imageUrl={`${process.env.PUBLIC_URL}/images/call-translate.jpg`}
             borderRadius="2rem"
+            reversed
           />
         </div>
         <div className={styles.projectCard}>
@@ -43,6 +44,7 @@ export const Projects = () => {
             leftSideContent={<SESHealthContent />}
             imageUrl={`${process.env.PUBLIC_URL}/images/ses-health.png`}
             borderRadius="2rem"
+            reversed
           />
         </div>
         <div className={styles.projectCard}>

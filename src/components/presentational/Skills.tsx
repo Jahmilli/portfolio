@@ -31,13 +31,7 @@ export const Skills = () => {
             <img src={technicalSkillsList[currentSelectedSkillIndex].icon} />
             <h3>{technicalSkillsList[currentSelectedSkillIndex].title}</h3>
           </div>
-          <ul>
-            {technicalSkillsList[currentSelectedSkillIndex].work.map(
-              (item: string, index: number) => (
-                <li key={index}>{item}</li>
-              )
-            )}
-          </ul>
+          {technicalSkillsList[currentSelectedSkillIndex].work}
         </div>
       </div>
       <div className={styles.softSkillsContainer}>
@@ -78,8 +72,8 @@ export const Skills = () => {
                 Starting as the only developer at the very beginning of Optus
                 Pause, I have been involved in the setup of technical practices
                 around the new platform we're building to enable more efficient
-                product development as part of company strategic initaitve known
-                as the Living Network.
+                product development as part of company strategic initiative
+                known as the Living Network.
                 <br />I have also been involved in helping grow the team around
                 this interviewing, onboarding and upskilling a variety of junior
                 and senior software engineers with different backgrounds in
@@ -104,20 +98,18 @@ export const Skills = () => {
             <ul>
               <li>
                 <p>
-                  Worked with an external team{" "}
-                  <strong>
-                    who had no prior experience to containers or Kubernetes
-                  </strong>{" "}
-                  that were interested in moving their Springboot applications
-                  running on virtual machines to utilising containers and being
-                  deployed onto Openshift; Redhat's Kubernetes platform. Was
-                  able to successfully help them migrate their applications
-                  providing documentation on everything we had done, a framework
-                  to manage their application configuration as well as build
-                  Jenkins pipelines that built and deployed their applications.
-                  This seem has since built and deployed entirely new products
-                  independetly using the framework and skills that were
-                  developed during this.
+                  Worked with an external team who had no prior experience to
+                  containers or Kubernetes that were interested in moving their
+                  Springboot applications running on virtual machines to
+                  utilising containers and being deployed onto Openshift;
+                  Redhat's Kubernetes platform. Was able to successfully help
+                  them migrate their applications providing documentation on
+                  everything we had done, a framework to manage their
+                  application configuration as well as build Jenkins pipelines
+                  that built and deployed their applications. This seem has
+                  since built and deployed entirely new products independently
+                  using the framework and skills that were developed during
+                  this.
                 </p>
               </li>
               <li>

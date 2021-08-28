@@ -1,8 +1,13 @@
 .container {
   text-align: center;
 }
+
 .container h2 {
   font-size: 3rem;
+}
+
+.container > h2:first-child {
+  margin-top: 4rem;
 }
 
 /* Projects */
@@ -18,11 +23,14 @@
   color: black;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem 0;
   border: 2px solid black;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 5px;
+  transition: 0.25s;
 }
 .projectCard a:hover {
-  text-decoration: underline;
+  background-color: #fdc435;
+  color: black;
+  border: 2px solid #fdc435;
 }
