@@ -13,7 +13,7 @@ export const Testimonials = () => {
   return (
     <div className={styles.otherContainer}>
       <h2>Testimonials</h2>
-      <p>People i've worked with have said some nice things!</p>
+      <p>People I've worked with have said some nice things!</p>
     </div>
   );
 };

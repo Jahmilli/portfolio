@@ -11,13 +11,15 @@ import styles from "./styles.module.css";
 export const Projects = () => {
   return (
     <div className={styles.container}>
-      <h2>Projects</h2>
-      <p>
-        Some work that I am quite proud of and was lucky enough to work on with
-        a variety of awesome people!
-      </p>
+      <div className={styles.midPageTitleLockup}>
+        <h2>Work Projects</h2>
+        <p>
+          Some projects that I am extremely proud to say I worked on with so
+          many awesome people!
+        </p>
+      </div>
       <div className={styles.projectsContainer}>
-        <div className={styles.projectCard}>
+        <div className={styles.projectCard} style={{ marginTop: "-4rem" }}>
           <TwoSideContainer
             leftSideContent={<OptusPauseContent />}
             imageUrl={`${process.env.PUBLIC_URL}/images/optus-pause.jpg`}
@@ -32,7 +34,16 @@ export const Projects = () => {
             reversed
           />
         </div>
-        <div className={styles.projectCard}>
+      </div>
+      <div className={styles.midPageTitleLockup}>
+        <h2>University Projects</h2>
+        <p>
+          Some of the projects I've helped build and that I feel have been the
+          most interesting to work on during my time at university!
+        </p>
+      </div>
+      <div className={styles.projectsContainer}>
+        <div className={styles.projectCard} style={{ marginTop: "-4rem" }}>
           <TwoSideContainer
             leftSideContent={<AiBasketballContent />}
             imageUrl={`${process.env.PUBLIC_URL}/images/ai-basketball.png`}

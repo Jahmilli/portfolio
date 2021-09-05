@@ -18,16 +18,16 @@ export const Navbar = () => {
             <a>Projects</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/articles">
             <a>Articles</a>
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="/contact">
             <a>Contact me</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

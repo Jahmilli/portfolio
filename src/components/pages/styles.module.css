@@ -34,3 +34,9 @@
   color: black;
   border: 2px solid #fdc435;
 }
+
+.midPageTitleLockup {
+  background-color: #fdc435;
+  border-radius: 0.25rem;
+  padding: 1rem 0 7rem 0;
+}

@@ -11,6 +11,75 @@ button:hover {
   text-decoration: underline;
 }
 
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: red;
+  animation: blinkCursor 0.8s steps(3) infinite;
+}
+
+@keyframes blinkCursor {
+  0%,
+  75% {
+    opacity: 1;
+  }
+  65%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+.loader h2 {
+  display: inline-block;
+  /* steps needs to be based on length of string */
+  margin: 0;
+  overflow: hidden;
+  animation: typing 4s steps(var(--charLength)) infinite;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  0%,
+  90%,
+  100% {
+    width: 0;
+  }
+  30%,
+  60% {
+    width: var(--mywidth);
+  }
+}
+
+/* Styles to manage typewriter effect with different values */
+.typeSoftwareDeveloper {
+  /* Software Developer */
+  --mywidth: 220.53px;
+  --charLength: 18;
+  composes: loader;
+}
+
+.typeSoftwareDesigner {
+  /* Software Designer */
+  --mywidth: 207.52px;
+  --charLength: 17;
+  composes: loader;
+}
+.typeLeader {
+  /* Leader */
+  --mywidth: 77.38px;
+  --charLength: 6;
+  composes: loader;
+}
+
 /* Navbar */
 .navbarContainer {
   display: flex;
@@ -103,8 +172,21 @@ button:hover {
 }
 
 .primaryBtn {
-  background-color: #fdc435;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0rem 0;
+  color: black;
+  text-decoration: none;
+  transition: 0.25s;
+  border: 2px solid black;
 }
+.primaryBtn:hover {
+  background-color: #fdc435;
+  border: 2px solid #fdc435;
+}
+
 .secondaryBtn {
   background: none;
   border: 2px solid black;

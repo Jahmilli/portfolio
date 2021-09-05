@@ -8,14 +8,12 @@ const AboutLeftSideContent = () => {
     <div style={{ marginTop: "4rem" }}>
       <h2>Getting to know me</h2>
       <p>
-        I'm a software engineer who started learning about software development
-        in 2016 when I started my Software Engineering Degree at the University
-        of Technology Sydney (UTS). At the very beginning I was told (by someone
-        close to me) I shouldn't get into this field because I wouldn't be able
-        to keep up with everyone and I did struggle quite a bit understanding
-        basic programming concepts at the very start. However with a fair bit of
-        studying and side-projects I was able to catchup build my skills to
-        where I am today.
+        I'm a software engineer who started learning software development in
+        2016 when I started my Software Engineering Degree at the University of
+        Technology Sydney (UTS). At the very beginning I was told by someone
+        close to me that I shouldn't get into this field because I wouldn't be
+        able to keep up with everyone, however, it only motivated me to work
+        harder to build my skills and push me to where I am today.
       </p>
       <p>
         Throughout university I have been able to continually build both
@@ -29,10 +27,9 @@ const AboutLeftSideContent = () => {
       </p>
       <p>
         During my time supporting PAAS I also assisted in helping out a Meetup
-        known as OrbitOz run at a variety of locations (Fishburners, UTS,
-        Atlassian, even a rooftop bar in Adelaide during the 2017 International
-        Astronautical Congress where they announced the Australian Space
-        Agency!){" "}
+        known as OrbitOz run at a variety of locations including Fishburners,
+        UTS, Atlassian, and even a rooftop bar in Adelaide during the 2017
+        International Astronautical Congress.
       </p>
       <p>
         I also worked as a treasurer on the UTS Programmers' Society helping
@@ -49,20 +46,23 @@ const AboutLeftSideContent = () => {
         from DevOps to full-stack web development mainly using React and
         building "microservices" in Java using Springboot. Throughout this
         period, the skills I picked up have been invaluable as it helped me
-        understand the full scope overview of software development,
-        infrastructure management, automation and operations. These skills are
-        utilised in the work I do now where I work as a Product Engineer at
-        Optus being involved in the system design, software development and
-        operational support of the newest and most exciting products (in my
-        opinion!).
+        understand the full scope of software development, infrastructure
+        management, automation and operations. These skills are utilised in the
+        work I do now where I work as a Product Engineer at Optus being involved
+        in the system design, software development and operational support of
+        the newest and most exciting products (in my opinion!).
       </p>
       <p>
         With all of this going on up until this year I was sustaining full-time
-        work and a full-time study workload at university but reduced the
-        workload at university in order to stay sane... I should finish by 2022!
+        work and a full-time study workload at university but have recently
+        reduced the workload at university in order to stay sane... I should
+        finish by 2022!
       </p>
       <p>
-        If you'd like to learn more, checkout my <a href="#">Resume</a>
+        If you'd like to learn more, checkout my{" "}
+        <a href="/downloads/Sebastian_Southern_CV_26082021.pdf" download>
+          Resume
+        </a>
       </p>
       <h3>What do I aim to achieve?</h3>
       <p>
@@ -72,7 +72,7 @@ const AboutLeftSideContent = () => {
         the work I do and continue to do needs to be meaningful and interesting.
       </p>
       <p>
-        Another important thing I want to keep managing is supporting those I
+        Another important thing I want to keep maintaining is supporting those I
         work with to ensure I'm always being able to help them keep moving
         fowards and improving. Whether this be through providing thoughts and
         opinions on topics, acting as a "rubber duck" to walk through problems,
@@ -91,11 +91,6 @@ const AboutLeftSideContent = () => {
         looking forward to making a bigger difference in whatever I choose to do
         in the future.
       </p>
-      {/* <p>Who am I?</p>
-      <p>When did i start programming?</p>
-      <p>Who do I want to be?</p>
-      <p>What are my values?</p>
-      <p>Whats next for me?</p> */}
     </div>
   );
 };

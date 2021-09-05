@@ -1,8 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import { About } from "../pages/About";
-import { Articles } from "../pages/Articles";
-import { Contact } from "../pages/Contact";
 import { Projects } from "../pages/Projects";
 import { Footer } from "../presentational/Footer";
 import { Landing } from "../presentational/Landing";
@@ -25,14 +23,14 @@ export const Main = () => {
             <Projects />
             <Footer />
           </Route>
-          <Route exact path="/articles">
+          {/* <Route exact path="/articles">
             <Articles />
             <Footer />
-          </Route>
-          <Route exact path="/contact">
+          </Route> */}
+          {/* <Route exact path="/contact">
             <Contact />
             <Footer />
-          </Route>
+          </Route> */}
         </Switch>
       </HashRouter>
     </div>

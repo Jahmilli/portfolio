@@ -49,13 +49,13 @@ export const technicalSkillsList = [
           </li>
           <li>
             Setup a local system integration testing (SIT) framework that
-            enabled behaviour-driven development to test product functionality
-            end-to-end that would spin up all applications as containers using
+            utilised behaviour-driven development to test product functionality
+            end-to-end. It would spin up all applications as containers using
             docker-compose, spin up http servers for any 3rd party service
             endpoints and then run through test scenarios. This allowed for
             testing in detail what data was in the Kafka messages, what data was
             in request body, headers etc to the servers as well as validating
-            what data would be written to Postgres
+            what data would be written to Postgres and Redis
           </li>
         </ul>
       </>
@@ -131,11 +131,11 @@ export const technicalSkillsList = [
         <li>
           Built a testing framework for a startup as part of the Software
           Development Studio utilising 'Behave', a Python framework to enable
-          Behaviour Driven Development styled testing of their product
-          interacting with Microsoft Azure. This further incorporated Allure
-          reporting so they could have test scenarios executed that would
-          interact with various Azure services, make assertions to validate
-          product functionality and provide nicely formatted testing results.
+          Behaviour Driven Development product to test their product interacting
+          with Microsoft Azure. This further incorporated Allure reporting so
+          they could have test scenarios executed that would interact with
+          various Azure services, make assertions to validate product
+          functionality and provide nicely formatted testing results
         </li>
       </>
     ),
@@ -147,9 +147,8 @@ export const technicalSkillsList = [
       <>
         <p>
           Java was the first programming language I ever picked up at the start
-          of my software engineering degree. Although I struggled with it early
-          on I finally seemed to have gotten a grasp of it. I haven't touched it
-          so much recently but I'm sure it wouldn't take long to get back into!
+          of my software engineering degree. I haven't touched it so much
+          recently but I'm sure it wouldn't take long to get back into!
         </p>
         <p>Some of the work I have done with it includes:</p>
         <ul>
@@ -161,10 +160,7 @@ export const technicalSkillsList = [
             Helped build a Springboot microservice utilising WebFlux to provide
             user search functionality
           </li>
-          <li>
-            Some work on a code removal project for a large monolithic Websphere
-            application
-          </li>
+          <li>Some work with a large monolithic Websphere application</li>
         </ul>
       </>
     ),
@@ -180,10 +176,9 @@ export const technicalSkillsList = [
           massively (it's just so useful!)
         </p>
         <p>
-          Aside from utilising the CLI in everything I do, some slightly larger
-          than normal scripts I have worked on have included the following:
+          Aside from utilising the CLI in everything I do, some of the scripts I
+          have found useful to work on include:
         </p>
-        <p>Some of the work I have done with it includes:</p>
         <ul>
           <li>
             Building a code migration script to clone repositories from Stash,
@@ -219,7 +214,7 @@ export const technicalSkillsList = [
       <>
         <p>
           Docker is something I've been using daily in the work I've been doing
-          for 2 years now
+          for 2 years now. Not much to say about it but containers are awesome!
         </p>
       </>
     ),
@@ -245,7 +240,7 @@ export const technicalSkillsList = [
             including Strimzi, Redhat Enterprise and CrunchyDb
           </li>
           <li>
-            Setup practices on managing kubernetes configuration with kustomize
+            Setup practices on managing Kubernetes configuration with kustomize
             enabling 1 press deployment for entire application infrastructure
           </li>
           <li>
@@ -268,7 +263,7 @@ export const technicalSkillsList = [
         </p>
         <p>Some of the work I have done with it includes:</p>
         <ul>
-          <li>Have setup Kafka using the Strimi operator in Openshift</li>
+          <li>Have setup Kafka using the Strimzi operator on Openshift</li>
           <li>
             Event design for a number of different projects including Optus
             Pause, Call Translate and more
@@ -278,14 +273,14 @@ export const technicalSkillsList = [
             KafkaJs
           </li>
           <li>
-            Setup easy to use abstraction in Nodejs to manage encoding/decoding
+            Setup easy to use abstractions in Nodejs to manage encoding/decoding
             Protobuf messages prior to sending to Kafka and when consuming from
             Kafka
           </li>
           <li>
             Have spoken at a brown-bag session on the basics of Kafka at Optus
-            to teach the benefits of Kafka and inspire other engineers to pick
-            it up in their projects
+            to teach others the benefits of Kafka and inspire other engineers to
+            pick it up in their projects
           </li>
           <li>
             Using it in production and at scale for the projects i'm currently
@@ -367,6 +362,10 @@ export const technicalSkillsList = [
             production at MLC
           </li>
           <li>
+            Setting up static React application hosting utilising S3,
+            Cloudfront, WAF and IAM
+          </li>
+          <li>
             Worked with EC2, S3, RDS, ECS, Cloudfront, Lambda, IAM, EFS, KMS,
             Route53 all using Terraform for a variety of projects
           </li>
@@ -391,7 +390,7 @@ export const technicalSkillsList = [
             Authentication
           </li>
           <li>
-            Setup emailing in Nodejs that were triggered from changes in the
+            Setup emailing in Nodejs that was triggered from changes in the
             Firebase Realtime Database through the use of Firebase's Cloud
             Functions
           </li>

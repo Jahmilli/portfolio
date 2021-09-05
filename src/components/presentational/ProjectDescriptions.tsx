@@ -27,7 +27,7 @@ export const OptusPauseContent = () => {
         </li>
         <li>
           <p>
-            Setup practices on managing kubernetes configuration with kustomize
+            Setup practices on managing Kubernetes configuration with kustomize
             enabling 1 press deployment for entire application infrastructure
           </p>
         </li>
@@ -172,7 +172,7 @@ export const AiBasketballContent = () => {
           </p>
         </li>
       </ul>
-      <a href="#">TBA</a>
+      <a href="/downloads/Capstone_02-11-2020.pdf">Download Report</a>
     </div>
   );
 };
@@ -250,9 +250,10 @@ export const VoluntimeContent = () => {
           <p>
             Built the login, signup, user-registration, forgot-password,
             creation/editing/viewing of charity events, viewing of volunteer
-            profiles, the rating system as well as emailing volunteers when they
-            had been accepted to an event, removed from an event, when an event
-            was about to start or the event had been cancelled.
+            profiles and the rating system. I also built the capabilitity for
+            emailing volunteers when they had been accepted to an event, removed
+            from an event, when an event was about to start or the event had
+            been cancelled.
           </p>
         </li>
         <li>
