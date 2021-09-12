@@ -42,8 +42,9 @@ export const Skills = () => {
             <ul>
               <li>
                 <p>
-                  Have done a few talks on different topics at internal meetups
-                  and brown-bags covering including talks on:
+                  Have done a few talks on different topics that i'm extremely
+                  interested in at internal meetups and brown-bags, including
+                  the including the following:
                 </p>
                 <ul>
                   <li>Testing in React using React Testing Library</li>
@@ -128,9 +129,6 @@ export const Skills = () => {
                 </p>
               </li>
             </ul>
-          </div>
-          <div>
-            <h3>Umm something else should go here</h3>
           </div>
         </div>
       </div>

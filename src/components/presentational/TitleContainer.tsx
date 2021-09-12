@@ -24,12 +24,12 @@ function useInterval(callback: any, delay: number) {
 export const TitleContainer = () => {
   const typeWriterStyles = [
     {
-      text: "Software Developer",
-      style: styles.typeSoftwareDeveloper,
+      text: "Software Engineer",
+      style: styles.typeSoftwareEngineer,
     },
     {
-      text: "Software Designer",
-      style: styles.typeSoftwareDesigner,
+      text: "Solution Designer",
+      style: styles.typeSolutionDesigner,
     },
     {
       text: "Leader",
@@ -38,31 +38,23 @@ export const TitleContainer = () => {
   ];
 
   const [num, setNum] = useState(0);
-  const [typingStyle, setTypingStyle] = useState(typeWriterStyles[1]);
-  console.log("typing style", typingStyle);
-  // const [typingStyle, setTypingStyle] = useState({
-  //   style: styles.typeSoftwareDeveloper,
-  //   text: "Software Developer",
-  // });
+  const [typingStyle, setTypingStyle] = useState(typeWriterStyles[0]);
   useInterval(() => {
+    let currentNum = num + 1;
     setNum((val) => val + 1);
-    setTypingStyle(typeWriterStyles[num % typeWriterStyles.length]);
-    console.log("val", num);
+    setTypingStyle(typeWriterStyles[currentNum % typeWriterStyles.length]);
   }, 4000);
 
   return (
     <div className={styles.titleContainer}>
       <h1>Hello, my name is Sebastian Southern</h1>
       <div className={typingStyle.style}>
-        {/* <div className={styles.typeSoftwareDeveloper}> */}
-        {/* <div className={styles.loader}> */}
         <h2 className={styles.typewriter}>{typingStyle.text}</h2>
-        {/* <h2 className={styles.typewriter}>Software Developer</h2> */}
       </div>
 
       <div style={{ display: "block", marginTop: "2rem" }}>
         <a
-          href="/downloads/Sebastian_Southern_CV_26082021.pdf"
+          href={`${process.env.PUBLIC_URL}/downloads/Sebastian_Southern_CV_26082021.pdf`}
           download
           className={styles.primaryBtn}
         >

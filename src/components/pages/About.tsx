@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const AboutLeftSideContent = () => {
   return (
-    <div style={{ marginTop: "4rem" }}>
+    <div style={{ marginTop: "4rem", paddingRight: "1rem" }}>
       <h2>Getting to know me</h2>
       <p>
         I'm a software engineer who started learning software development in
@@ -60,7 +60,10 @@ const AboutLeftSideContent = () => {
       </p>
       <p>
         If you'd like to learn more, checkout my{" "}
-        <a href="/downloads/Sebastian_Southern_CV_26082021.pdf" download>
+        <a
+          href={`${process.env.PUBLIC_URL}/downloads/Sebastian_Southern_CV_26082021.pdf`}
+          download
+        >
           Resume
         </a>
       </p>

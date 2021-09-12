@@ -60,16 +60,16 @@ button:hover {
 }
 
 /* Styles to manage typewriter effect with different values */
-.typeSoftwareDeveloper {
-  /* Software Developer */
-  --mywidth: 220.53px;
-  --charLength: 18;
+.typeSoftwareEngineer {
+  /* Software Engineer */
+  --mywidth: 205.95px;
+  --charLength: 17;
   composes: loader;
 }
 
-.typeSoftwareDesigner {
-  /* Software Designer */
-  --mywidth: 207.52px;
+.typeSolutionDesigner {
+  /* Solution Designer */
+  --mywidth: 195.5px;
   --charLength: 17;
   composes: loader;
 }
@@ -199,7 +199,8 @@ button:hover {
   transition: 0.25s;
 }
 .secondaryBtn:hover {
-  background-color: black;
+  background-color: #0a66c2;
+  border-color: #0a66c2;
   color: white;
 }
 
@@ -228,7 +229,7 @@ button:hover {
 
 .twoSideContainerImageLockup {
   max-width: 100%;
-  max-height: 75vh;
+  height: 75vh;
   text-align: right;
 }
 
@@ -292,14 +293,15 @@ button:hover {
 /* Soft Skills */
 .softSkillsGrid {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .softSkillsGrid > div {
   background-color: white;
   border-radius: 2rem;
   margin: 1rem;
+  padding: 1rem;
 }
 .softSkillsGrid ul {
   text-align: left;

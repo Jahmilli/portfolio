@@ -172,7 +172,9 @@ export const AiBasketballContent = () => {
           </p>
         </li>
       </ul>
-      <a href="/downloads/Capstone_02-11-2020.pdf">Download Report</a>
+      <a href={`${process.env.PUBLIC_URL}/downloads/Capstone_02-11-2020.pdf`}>
+        Download Report
+      </a>
     </div>
   );
 };

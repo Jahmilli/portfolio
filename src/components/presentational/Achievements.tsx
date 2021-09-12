@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 export const Achievements = () => {
   return (
     <div className={styles.container}>
-      <h2>Achievements & Certifications</h2>
+      <h2>Awards & Certifications</h2>
       <p>
         Below is a list of awards, accrediations and general accomplishments
       </p>
