@@ -1,0 +1,42 @@
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 3rem;
+}
+
+.container > h2:first-child {
+  margin-top: 4rem;
+}
+
+/* Projects */
+.projectsContainer {
+  margin: 0 4rem;
+}
+
+.projectCard {
+  margin: 4rem 0;
+}
+
+.projectCard a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 1rem 2rem 0;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+.projectCard a:hover {
+  background-color: #fdc435;
+  color: black;
+  border: 2px solid #fdc435;
+}
+
+.midPageTitleLockup {
+  background-color: #fdc435;
+  border-radius: 0.25rem;
+  padding: 1rem 0 7rem 0;
+}

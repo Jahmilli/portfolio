@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/#/about -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9faff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztFQUNsQyx5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRTthQUNXO0FBQ2IiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcbiAgbWFyZ2luOiAwO1xuICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBcIlNlZ29lIFVJXCIsIFwiUm9ib3RvXCIsIFwiT3h5Z2VuXCIsXG4gICAgXCJVYnVudHVcIiwgXCJDYW50YXJlbGxcIiwgXCJGaXJhIFNhbnNcIiwgXCJEcm9pZCBTYW5zXCIsIFwiSGVsdmV0aWNhIE5ldWVcIixcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y5ZmFmZjtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCBcIkNvdXJpZXIgTmV3XCIsXG4gICAgbW9ub3NwYWNlO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxvQkFBb0I7QUFDdEI7O0FBRUE7RUFDRTtJQUNFLDRDQUE0QztFQUM5QztBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsNkJBQTZCO0VBQzdCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRTtJQUNFLHVCQUF1QjtFQUN6QjtFQUNBO0lBQ0UseUJBQXlCO0VBQzNCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uQXBwLWxvZ28ge1xuICBoZWlnaHQ6IDQwdm1pbjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbkBtZWRpYSAocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogbm8tcHJlZmVyZW5jZSkge1xuICAuQXBwLWxvZ28ge1xuICAgIGFuaW1hdGlvbjogQXBwLWxvZ28tc3BpbiBpbmZpbml0ZSAyMHMgbGluZWFyO1xuICB9XG59XG5cbi5BcHAtaGVhZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI4MmMzNDtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmb250LXNpemU6IGNhbGMoMTBweCArIDJ2bWluKTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cblxuQGtleWZyYW1lcyBBcHAtbG9nby1zcGluIHtcbiAgZnJvbSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMGRlZyk7XG4gIH1cbiAgdG8ge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>button {
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0rem 0;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Navbar */
+.styles_navbarContainer__3uL0h {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fdc435;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 1;
+}
+.styles_navbarContainer__3uL0h > p {
+  display: flex;
+}
+.styles_navbarContainer__3uL0h > ul {
+  list-style: none;
+}
+.styles_navbarContainer__3uL0h li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.styles_navbarContainer__3uL0h li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.styles_navbarContainer__3uL0h a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Landing */
+.styles_landingContainer__SB3gZ {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+@keyframes styles_bounce__3RoFt {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.styles_seeMoreContainer__4EKHA {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+}
+.styles_seeMoreContainer__4EKHA > button {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+.styles_seeMoreContainer__4EKHA > button > img {
+  height: 2rem;
+  width: 2rem;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-name: styles_bounce__3RoFt;
+  animation-timing-function: ease;
+}
+
+.styles_titleContainer__2AEdv {
+  margin: 5rem 0 0 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30vw;
+  border-radius: 1.25rem;
+  display: inline-block;
+  color: black;
+}
+
+.styles_titleContainer__2AEdv > h1 {
+  font-size: 3rem;
+}
+
+.styles_primaryBtn__3ta0h {
+  background-color: #fdc435;
+}
+.styles_secondaryBtn__3NYtq {
+  background: none;
+  border: 2px solid black;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1rem 1rem 0rem 0;
+  text-decoration: none;
+}
+.styles_secondaryBtn__3NYtq:hover {
+  text-decoration: underline;
+}
+
+/* About */
+.styles_twoSideContainer__15J4K {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+}
+
+.styles_twoSideContainerReversed__1hWP7 {
+  direction: rtl;
+}
+
+.styles_twoSideContainerReversed__1hWP7 div {
+  direction: ltr;
+}
+
+.styles_twoSideContainerTextLockup__1GWVG {
+  text-align: left;
+  padding-left: 3rem;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.styles_twoSideContainerImageLockup__6kwp2 {
+  max-width: 100%;
+  max-height: 75vh;
+  text-align: right;
+}
+
+.styles_twoSideContainerImageLockup__6kwp2 > img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.styles_twoSideContainerImageLockupReversed__IWaP8 {
+  text-align: left;
+}
+
+/* Skills */
+.styles_skillsContainer__1ZWnh {
+}
+
+.styles_midPageTitleLockup__30m2I {
+  background-color: #fdc435;
+  border-radius: 0.25rem;
+  padding: 1rem 0 7rem 0;
+}
+
+.styles_technicalSkillsContainer__2-7Dn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: -5rem 5rem 0 5rem;
+  padding: 2rem 5rem 0 5rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.styles_techToolsContainer__BZpcr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.styles_techToolsDescription___SgTB {
+  border-left: 2px solid black;
+}
+.styles_techToolsDescriptionTitleLockup__1Xt_u {
+  display: flex;
+  justify-content: center;
+}
+.styles_techToolsDescriptionTitleLockup__1Xt_u > h3 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.styles_techToolsDescriptionTitleLockup__1Xt_u > img {
+  height: 4rem;
+  width: 4rem;
+}
+.styles_techToolsDescription___SgTB ul {
+  list-style: none;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+/* Soft Skills */
+.styles_softSkillsGrid__1E-wo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.styles_softSkillsGrid__1E-wo > div {
+  background-color: white;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.styles_softSkillsGrid__1E-wo ul {
+  text-align: left;
+}
+
+/* SkillsCard */
+.styles_skillsCardContainer__2f2Yx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.styles_skillsCardContainer__2f2Yx button {
+  background: none;
+}
+.styles_skillsCardContainer__2f2Yx img {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* Achievements */
+.styles_achievementsList__2moLR {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.styles_achievementsList__2moLR > div {
+  margin: 2rem;
+}
+
+/* Card */
+.styles_cardContainer__22f1W {
+  display: inline-block;
+  background-color: white;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.styles_cardContainer__22f1W > p:first-child {
+  font-weight: bold;
+}
+
+.styles_cardContainer__22f1W > a {
+  display: inline-block;
+  color: black;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.styles_cardContainer__22f1W > a:hover {
+  text-decoration: underline;
+}
+
+.styles_otherContainer__blj50 {
+}
+
+/* Footer */
+.styles_footerContainer__3sA3Q {
+  /* height: 25vh; */
+  /* background-color: tomato; */
+  position: relative;
+  text-align: center;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.styles_footerContainer__3sA3Q > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2rem;
+  text-align: center;
+}
+
+.styles_footerContainer__3sA3Q > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .styles_twoSideContainer__15J4K {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+  }
+  .styles_techToolsContainer__BZpcr {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .styles_achievementsList__2moLR {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .styles_techToolsContainer__BZpcr {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .styles_achievementsList__2moLR {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .styles_softSkillsGrid__1E-wo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9wcmVzZW50YXRpb25hbC9zdHlsZXMubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osZUFBZTtFQUNmLGVBQWU7RUFDZix3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsMEJBQTBCO0FBQzVCOztBQUVBLFdBQVc7QUFDWDtFQUNFLGFBQWE7RUFDYixlQUFlO0VBQ2YsTUFBTTtFQUNOLE9BQU87RUFDUCxRQUFRO0VBQ1IseUJBQXlCO0VBQ3pCLDhCQUE4QjtFQUM5QixlQUFlO0VBQ2YsVUFBVTtBQUNaO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLDBCQUEwQjtFQUMxQixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxZQUFZO0VBQ1oscUJBQXFCO0FBQ3ZCOztBQUVBLFlBQVk7QUFDWjtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFO0lBQ0Usd0JBQXdCO0VBQzFCO0VBQ0E7SUFDRSw2QkFBNkI7RUFDL0I7RUFDQTtJQUNFLHdCQUF3QjtFQUMxQjtFQUNBO0lBQ0Usd0JBQXdCO0VBQzFCO0FBQ0Y7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixPQUFPO0VBQ1AsUUFBUTtFQUNSLFlBQVk7QUFDZDtBQUNBO0VBQ0Usb0NBQW9DO0VBQ3BDLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsWUFBWTtFQUNaLFdBQVc7RUFDWCxzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLG1DQUFtQztFQUNuQyxvQ0FBc0I7RUFDdEIsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGFBQWE7RUFDYiwwQ0FBMEM7RUFDMUMsV0FB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a0NBQWtDO0VBQ3BDO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b24ge1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGJvcmRlcjogbm9uZTtcbiAgZm9udC1zaXplOiAxcmVtO1xuICBwYWRkaW5nOiAwLjVyZW07XG4gIG1hcmdpbjogMXJlbSAxcmVtIDByZW0gMDtcbn1cblxuYnV0dG9uOmhvdmVyIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbn1cblxuLyogTmF2YmFyICovXG4ubmF2YmFyQ29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmRjNDM1O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBhZGRpbmc6IDAgNHJlbTtcbiAgei1pbmRleDogMTtcbn1cbi5uYXZiYXJDb250YWluZXIgPiBwIHtcbiAgZGlzcGxheTogZmxleDtcbn1cbi5uYXZiYXJDb250YWluZXIgPiB1bCB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG59XG4ubmF2YmFyQ29udGFpbmVyIGxpIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW4tbGVmdDogMXJlbTtcbn1cblxuLm5hdmJhckNvbnRhaW5lciBsaTpob3ZlciB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubmF2YmFyQ29udGFpbmVyIGEge1xuICBjb2xvcjogYmxhY2s7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLyogTGFuZGluZyAqL1xuLmxhbmRpbmdDb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG5Aa2V5ZnJhbWVzIGJvdW5jZSB7XG4gIDAlIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMCk7XG4gIH1cbiAgMzAlIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMC41cmVtKTtcbiAgfVxuICA1MCUge1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgwKTtcbiAgfVxuICAxMDAlIHtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMCk7XG4gIH1cbn1cblxuLnNlZU1vcmVDb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIGJvdHRvbTogMnJlbTtcbn1cbi5zZWVNb3JlQ29udGFpbmVyID4gYnV0dG9uIHtcbiAgYmFja2dyb3VuZDogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjQpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG4uc2VlTW9yZUNvbnRhaW5lciA+IGJ1dHRvbiA+IGltZyB7XG4gIGhlaWdodDogMnJlbTtcbiAgd2lkdGg6IDJyZW07XG4gIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gIGFuaW1hdGlvbi1kZWxheTogNXM7XG4gIGFuaW1hdGlvbi1pdGVyYXRpb24tY291bnQ6IGluZmluaXRlO1xuICBhbmltYXRpb24tbmFtZTogYm91bmNlO1xuICBhbmltYXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlO1xufVxuXG4udGl0bGVDb250YWluZXIge1xuICBtYXJnaW46IDVyZW0gMCAwIDJyZW07XG4gIHBhZGRpbmc6IDJyZW07XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KTtcbiAgd2lkdGg6IDMwdnc7XG4gIGJvcmRlci1yYWRpdXM6IDEuMjVyZW07XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGl0bGVDb250YWluZXIgPiBoMSB7XG4gIGZvbnQtc2l6ZTogM3JlbTtcbn1cblxuLnByaW1hcnlCdG4ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmRjNDM1O1xufVxuLnNlY29uZGFyeUJ0biB7XG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICBjb2xvcjogYmxhY2s7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgZm9udC1zaXplOiAxcmVtO1xuICBwYWRkaW5nOiAwLjVyZW07XG4gIG1hcmdpbjogMXJlbSAxcmVtIDByZW0gMDtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuLnNlY29uZGFyeUJ0bjpob3ZlciB7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG4vKiBBYm91dCAqL1xuLnR3b1NpZGVDb250YWluZXIge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnI7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG4udHdvU2lkZUNvbnRhaW5lclJldmVyc2VkIHtcbiAgY29tcG9zZXM6IHR3b1NpZGVDb250YWluZXI7XG4gIGRpcmVjdGlvbjogcnRsO1xufVxuXG4udHdvU2lkZUNvbnRhaW5lclJldmVyc2VkIGRpdiB7XG4gIGRpcmVjdGlvbjogbHRyO1xufVxuXG4udHdvU2lkZUNvbnRhaW5lclRleHRMb2NrdXAge1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuICBwYWRkaW5nLWxlZnQ6IDNyZW07XG4gIGhlaWdodDogNzV2aDtcbiAgb3ZlcmZsb3cteTogc2Nyb2xsO1xufVxuXG4udHdvU2lkZUNvbnRhaW5lckltYWdlTG9ja3VwIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBtYXgtaGVpZ2h0OiA3NXZoO1xuICB0ZXh0LWFsaWduOiByaWdodDtcbn1cblxuLnR3b1NpZGVDb250YWluZXJJbWFnZUxvY2t1cCA+IGltZyB7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4udHdvU2lkZUNvbnRhaW5lckltYWdlTG9ja3VwUmV2ZXJzZWQge1xuICBjb21wb3NlczogdHdvU2lkZUNvbnRhaW5lckltYWdlTG9ja3VwO1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuXG4vKiBTa2lsbHMgKi9cbi5za2lsbHNDb250YWluZXIge1xufVxuXG4ubWlkUGFnZVRpdGxlTG9ja3VwIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZkYzQzNTtcbiAgYm9yZGVyLXJhZGl1czogMC4yNXJlbTtcbiAgcGFkZGluZzogMXJlbSAwIDdyZW0gMDtcbn1cblxuLnRlY2huaWNhbFNraWxsc0NvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNTAlIDUwJTtcbiAgbWFyZ2luOiAtNXJlbSA1cmVtIDAgNXJlbTtcbiAgcGFkZGluZzogMnJlbSA1cmVtIDAgNXJlbTtcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG5cbi50ZWNoVG9vbHNDb250YWluZXIge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCg0LCAxZnIpO1xufVxuXG4udGVjaFRvb2xzRGVzY3JpcHRpb24ge1xuICBib3JkZXItbGVmdDogMnB4IHNvbGlkIGJsYWNrO1xufVxuLnRlY2hUb29sc0Rlc2NyaXB0aW9uVGl0bGVMb2NrdXAge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi50ZWNoVG9vbHNEZXNjcmlwdGlvblRpdGxlTG9ja3VwID4gaDMge1xuICBmb250LXNpemU6IDIuNXJlbTtcbiAgbWFyZ2luLXRvcDogMC41cmVtO1xuICBtYXJnaW4tbGVmdDogMXJlbTtcbn1cbi50ZWNoVG9vbHNEZXNjcmlwdGlvblRpdGxlTG9ja3VwID4gaW1nIHtcbiAgaGVpZ2h0OiA0cmVtO1xuICB3aWR0aDogNHJlbTtcbn1cbi50ZWNoVG9vbHNEZXNjcmlwdGlvbiB1bCB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG4gIHRleHQtYWxpZ246IGxlZnQ7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLyogU29mdCBTa2lsbHMgKi9cbi5zb2Z0U2tpbGxzR3JpZCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNTAlIDUwJTtcbiAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiA1MCUgNTAlO1xufVxuXG4uc29mdFNraWxsc0dyaWQgPiBkaXYge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyLXJhZGl1czogMnJlbTtcbiAgbWFyZ2luOiAxcmVtO1xufVxuLnNvZnRTa2lsbHNHcmlkIHVsIHtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbn1cblxuLyogU2tpbGxzQ2FyZCAqL1xuLnNraWxsc0NhcmRDb250YWluZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi5za2lsbHNDYXJkQ29udGFpbmVyIGJ1dHRvbiB7XG4gIGJhY2tncm91bmQ6IG5vbmU7XG59XG4uc2tpbGxzQ2FyZENvbnRhaW5lciBpbWcge1xuICBoZWlnaHQ6IDNyZW07XG4gIHdpZHRoOiAzcmVtO1xufVxuXG4vKiBBY2hpZXZlbWVudHMgKi9cbi5hY2hpZXZlbWVudHNMaXN0IHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwgMWZyKTtcbn1cblxuLmFjaGlldmVtZW50c0xpc3QgPiBkaXYge1xuICBtYXJnaW46IDJyZW07XG59XG5cbi8qIENhcmQgKi9cbi5jYXJkQ29udGFpbmVyIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgcGFkZGluZzogMXJlbTtcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcbn1cblxuLmNhcmRDb250YWluZXIgPiBwOmZpcnN0LWNoaWxkIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi5jYXJkQ29udGFpbmVyID4gYSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgY29sb3I6IGJsYWNrO1xuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgcGFkZGluZzogMC41cmVtO1xuICBib3JkZXItcmFkaXVzOiAxLjVyZW07XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgbWFyZ2luLXRvcDogMS41cmVtO1xufVxuXG4uY2FyZENvbnRhaW5lciA+IGE6aG92ZXIge1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbn1cblxuLm90aGVyQ29udGFpbmVyIHtcbn1cblxuLyogRm9vdGVyICovXG4uZm9vdGVyQ29udGFpbmVyIHtcbiAgLyogaGVpZ2h0OiAyNXZoOyAqL1xuICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiB0b21hdG87ICovXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBoZWlnaHQ6IDI1dmg7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG5cbi5mb290ZXJDb250YWluZXIgPiBkaXYge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICB0b3A6IDJyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLmZvb3RlckNvbnRhaW5lciA+IGltZyB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMjAwcHgpIHtcbiAgLnR3b1NpZGVDb250YWluZXIge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAzZnIgMmZyO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICB9XG4gIC50ZWNoVG9vbHNDb250YWluZXIge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDMsIDFmcik7XG4gIH1cbiAgLmFjaGlldmVtZW50c0xpc3Qge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDMsIDFmcik7XG4gIH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTUwcHgpIHtcbiAgLnRlY2hUb29sc0NvbnRhaW5lciB7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMiwgMWZyKTtcbiAgfVxuICAuYWNoaWV2ZW1lbnRzTGlzdCB7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMiwgMWZyKTtcbiAgfVxuICAuc29mdFNraWxsc0dyaWQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7XG4gICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiByZXBlYXQoNCwgMWZyKTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.styles_container__1NNMK {
+  text-align: center;
+}
+.styles_container__1NNMK h2 {
+  font-size: 3rem;
+}
+
+/* Projects */
+.styles_projectsContainer__38LI4 {
+  margin: 0 4rem;
+}
+
+.styles_projectCard__MBF8A {
+  margin: 4rem 0;
+}
+
+.styles_projectCard__MBF8A a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.styles_projectCard__MBF8A a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9wYWdlcy9zdHlsZXMubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQSxhQUFhO0FBQ2I7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixxQkFBcUI7RUFDckIscUJBQXFCO0VBQ3JCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsZUFBZTtFQUNmLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsMEJBQTBCO0FBQzVCIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5jb250YWluZXIgaDIge1xuICBmb250LXNpemU6IDNyZW07XG59XG5cbi8qIFByb2plY3RzICovXG4ucHJvamVjdHNDb250YWluZXIge1xuICBtYXJnaW46IDAgNHJlbTtcbn1cblxuLnByb2plY3RDYXJkIHtcbiAgbWFyZ2luOiA0cmVtIDA7XG59XG5cbi5wcm9qZWN0Q2FyZCBhIHtcbiAgY29sb3I6IGJsYWNrO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luLWJvdHRvbTogMnJlbTtcbiAgYm9yZGVyOiAycHggc29saWQgYmxhY2s7XG4gIHBhZGRpbmc6IDAuNXJlbTtcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcbn1cbi5wcm9qZWN0Q2FyZCBhOmhvdmVyIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><div class="styles_navbarContainer__3uL0h"><a href="http://localhost:3000/#/"><p>Sebastian Southern</p></a><ul><li><a href="http://localhost:3000/#/about"><a>About</a></a></li><li><a href="http://localhost:3000/#/projects"><a>Projects</a></a></li><li><a href="http://localhost:3000/#/articles"><a>Articles</a></a></li><li><a href="http://localhost:3000/#/contact"><a>Contact me</a></a></li></ul></div><div class="styles_container__1NNMK"><div class="styles_twoSideContainer__15J4K" style="border-radius: 0px;"><div class="styles_twoSideContainerTextLockup__1GWVG"><div><h2>Getting to know me</h2><p>I'm a software engineer who started learning about software development in 2016 when I started my Software Engineering Degree at the University of Technology Sydney (UTS). At the very beginning I was told (by someone close to me) I shouldn't get into this field because I wouldn't be able to keep up with everyone and I did struggle quite a bit understanding basic programming concepts at the very start. However with a fair bit of studying and side-projects I was able to catchup build my skills to where I am today.</p><p>Throughout university I have been able to continually build both technical and social skills. During my time, I have supported two societies, one being the UTS Professional Aeronautics &amp; Astronautics Society (PAAS) which I joined at it's very inception in 2017. I was the Vice President of this society for two years helping ideate and organise a variety of social, industry based and technical events to help foster interest and social interaction between students at UTS as well at UNSW and USYD with a common interest in space!</p><p>During my time supporting PAAS I also assisted in helping out a Meetup known as OrbitOz run at a variety of locations (Fishburners, UTS, Atlassian, even a rooftop bar in Adelaide during the 2017 International Astronautical Congress where they announced the Australian Space Agency!) </p><p>I also worked as a treasurer on the UTS Programmers' Society helping ensure the society ran smoothly throughout the 2018 helping organise a Hackathon, Programming Competition as well as programming workshops and other social events.</p><h3>A brief overview of my work life</h3><p>My career in software development started in 2018 as a DevOps Engineering intern through the NAB Industry Based Learning (IBL) program which I developed skills around the devops space focusing on automation, cloud computing and infrastructure. I then started shifting my focus from DevOps to full-stack web development mainly using React and building "microservices" in Java using Springboot. Throughout this period, the skills I picked up have been invaluable as it helped me understand the full scope overview of software development, infrastructure management, automation and operations. These skills are utilised in the work I do now where I work as a Product Engineer at Optus being involved in the system design, software development and operational support of the newest and most exciting products (in my opinion!).</p><p>With all of this going on up until this year I was sustaining full-time work and a full-time study workload at university but reduced the workload at university in order to stay sane... I should finish by 2022!</p><p>If you'd like to learn more, checkout my <a href="http://localhost:3000/#">Resume</a></p><h3>What do I aim to achieve?</h3><p>I want to make a difference in the world and fortunately enough I believe I can achieve this through what I practise every day. Although it's cheesy, it's quite important that I can keep this as a focus and so the work I do and continue to do needs to be meaningful and interesting.</p><p>Another important thing I want to keep managing is supporting those I work with to ensure I'm always being able to help them keep moving fowards and improving. Whether this be through providing thoughts and opinions on topics, acting as a "rubber duck" to walk through problems, pair-programming or anything, I always want to make sure I'm there to help whilst also staying afloat with the work I am responsible for.</p><h3>What is next?</h3><p>Although I still need to continue developing my skills in devops, full stack development and system design, the next thing I'm looking at developing my skills in, is around cybersecurity so hopefully next time you checkout this page, i'll have something exciting to tell you about!</p><p>Overall, I'm incredibly proud of what I have been able to achieve and looking forward to making a bigger difference in whatever I choose to do in the future.</p></div></div><div class="styles_twoSideContainerImageLockup__6kwp2"><img src="./React App_files/seb.jpg" draggable="false" style="border-radius: 0px;"></div></div><div><h2>Achievements &amp; Certifications</h2><p>Below is a list of awards, accrediations and general accomplishments</p><div class="styles_achievementsList__2moLR"><div class="styles_cardContainer__22f1W"><p>Akamai Web Performance Foundations</p><p>For successfully completing the Akamai Web Performance Solutions course which provided an overview of the basics of using Akamai and configuring it</p></div><div class="styles_cardContainer__22f1W"><p>AWS Certified Developer</p><p>For successfully passing the AWS Certified Developer - Associate exam covering a range of topics across a variety of AWS specific services</p></div><div class="styles_cardContainer__22f1W"><p>Dean's list 2020</p><p>For achieving a weighted average mark over 85 among the subjects I was studying</p></div><div class="styles_cardContainer__22f1W"><p>Dean's list 2019</p><p>For achieving a weighted average mark over 85 among the subjects I was studying</p></div><div class="styles_cardContainer__22f1W"><p>Wisetech Global Software Engineering Prize 2018</p><p>For placing second in the subject Software Architecture</p></div><div class="styles_cardContainer__22f1W"><p>Wisetech Global Software Development Studio Prize 2017</p><p>Awarded for the work my team and I did on a project in the Software Development Studio</p></div></div></div><div class="styles_skillsContainer__1ZWnh"><div class="styles_midPageTitleLockup__30m2I"><h2>Technical Skills &amp; Tools</h2><p>Below is a list of recent languages/tools I've used in work and side-projects, click on them for some brief details of what I've done with a particular tool!</p></div><div class="styles_technicalSkillsContainer__2-7Dn"><div class="styles_techToolsContainer__BZpcr"><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/nodejs.fa5d4021.svg" draggable="false"><p>Node.js</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/react.16932db5.svg" draggable="false"><p>React</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/typescript.8417dfd3.svg" draggable="false"><p>Typescript</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/python.07309812.svg" draggable="false"><p>Python</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/java.5c940ced.svg" draggable="false"><p>Java</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/bash.60d5c459.svg" draggable="false"><p>Bash</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/docker.2d5a0c65.svg" draggable="false"><p>Docker</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/openshift.dbf97b9b.svg" draggable="false"><p>Openshift</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/kafka.9f14b778.svg" draggable="false"><p>Kafka</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/postgres.85ee8ac7.svg" draggable="false"><p>Postgres</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/redis.0e1b7602.svg" draggable="false"><p>Redis</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/aws.c18cc315.svg" draggable="false"><p>AWS</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/firebase.866c4b54.svg" draggable="false"><p>Firebase</p></button></div><div class="styles_skillsCardContainer__2f2Yx"><button><img src="./React App_files/jenkins.e79c1fc0.svg" draggable="false"><p>Jenkins</p></button></div></div><div class="styles_techToolsDescription___SgTB"><div class="styles_techToolsDescriptionTitleLockup__1Xt_u"><img src="./React App_files/react.16932db5.svg"><h3>React</h3></div><ul><li>Experience building accessible, responsive, well-tested client-side web applications using both styled-components and css-modules.</li><li>Some of the work I have done includes:</li><li>• Lead the front-end development for Voice Notes; a React application that provides real time voice transcription and call summarisation for call center agents</li><li>• Built a React Native application to support uploading videos of someone shooting a free-throw in basketball that would be processed against and show feedback of how to improve their shot (Checkout projects)</li><li>• Started as the initial developer and built a number of components on Optus Pause prior to the team growing</li><li>• Have built a real-time Trello board as part of a greater Microsoft Teams replication project in Software Engineering Studio 2B in 2020</li><li>• Experience with React Testing Library to test components in React. This is one of my favourite testing frameworks and I talked about it at a brown-bag session at Optus in 2020 as well as wrote an article about it (Checkout the 'Articles' section)</li></ul></div></div><div><h2>Transferable Skills</h2><div class="styles_softSkillsGrid__1E-wo"><div><h3>Communication</h3><ul><li><p>Have done a few talks on different topics at internal meetups and brown-bags covering including talks on:</p><ul><li>Testing in React using React Testing Library</li><li>End-to-end testing using the SIT testing framework I built</li><li>An introduction to Kafka</li></ul></li><li><p>Through the use of a proof-of-concept I built integrating a React application into a Webview in both Android and iOS. I was able to give a presentation on some of the pros/cons of using a WebView to build web applications into a native mobile application which helped enable the development of Optus Pause and Call Translate doing just this.</p></li></ul></div><div><h3>Leadership</h3><ul><li>Starting as the only developer at the very beginning of Optus Pause, I have been involved in the setup of technical practices around the new platform we're building to enable more efficient product development as part of company strategic initaitve known as the Living Network.<br>I have also been involved in helping grow the team around this interviewing, onboarding and upskilling a variety of junior and senior software engineers with different backgrounds in development, devops and testing to grow the team to currently &gt; 20 engineers.</li><li><p>Lead the backend development of Optus Pause and Call Translate to work with solution designers, maintaining consistent communication with team mates working on the frontend to ensure alignment between the frontend and the backend, as well as working with the operations team to ensure they were capable of supporting the platform and products that had been built.</p></li></ul></div><div><h3>Collaboration</h3><ul><li><p>Worked with an external team <strong>who had no prior experience to containers or Kubernetes</strong> that were interested in moving their Springboot applications running on virtual machines to utilising containers and being deployed onto Openshift; Redhat's Kubernetes platform. Was able to successfully help them migrate their applications providing documentation on everything we had done, a framework to manage their application configuration as well as build Jenkins pipelines that built and deployed their applications. This seem has since built and deployed entirely new products independetly using the framework and skills that were developed during this.</p></li><li><p>Worked with an external team to help migrate a series of applications required to support Call Translate into a Rancher cluster from Openshift. Through this was able to build a strong relationship with the team to help bridge a gap between the Digital domain and Networks domain building trust that we can more effectively build applications across the domains</p></li></ul></div><div><h3>Umm something else should go here</h3></div></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/vendors_main.chunk.js"></script><script src="./React App_files/main.chunk.js"></script>
+
+</body></html>
